@@ -290,6 +290,15 @@ h2 {
     border: 1px solid var(--primary-color);
 }
 
+.event-image {
+    max-width: 150px; /* Reduced from 200px to make images smaller */
+    height: auto;     /* Maintain aspect ratio */
+    display: block;   /* Helps with consistent layout */
+    margin-left: auto; /* Center the image within its card if it's narrower */
+    margin-right: auto;/* Center the image within its card */
+    margin-bottom: 1rem; /* Space below the image */
+}
+
 .event-date {
     font-size: 1.2rem;
     color: var(--primary-color);
