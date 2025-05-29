@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CipherTekies - Cybersecurity Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* This is a common fix for an overlapping fixed or sticky header. */
+        /* It adds padding to the top of the body to push content down. */
+        body {
+            /* Navbar height is approx. 1.5rem (top padding) + 1.8rem (logo font-size) + 1.5rem (bottom padding) = 4.8rem. */
+            /* If 1rem = 16px, then 4.8 * 16 = 76.8px. Using 77px or 4.8rem. */
+            padding-top: 4.8rem; /* Adjusted to match calculated navbar height */
+        }
+        /* Style for the logo link to prevent color changes */
+        .logo a,
+        .logo a:link,
+        .logo a:visited,
+        .logo a:hover,
+        .logo a:active {
+            color: inherit; /* Inherits color from the parent .logo div */
+            text-decoration: none; /* Removes underline */
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><a href="#about">CipherTekies</a></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#founder">Founder</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to CipherTekies</h1>
+            <p>Securing the Digital Future Together</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="vision-mission">
+                <div class="card">
+                    <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                    <p>To become a leading force in cybersecurity education and community building, empowering individuals and organizations to navigate the digital landscape securely.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                    <p>To foster a collaborative environment where cybersecurity enthusiasts can learn, share, and grow while contributing to a safer digital world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Security Training</h3>
+                <p>Comprehensive cybersecurity training programs for all skill levels.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>CTF Events</h3>
+                <p>Regular Capture The Flag competitions to test and improve skills.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-users"></i>
+                <h3>Mentorship</h3>
+                <p>One-on-one guidance from experienced security professionals.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-bug"></i>
+                <h3>Bug Bounty</h3>
+                <p>Learn about and participate in bug bounty programs.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-book-reader"></i>
+                <h3>Resource Library</h3>
+                <p>Access a curated library of cybersecurity articles, tools, and guides.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="events">
+        <h2>Upcoming Events</h2>
+        <div class="events-grid">
+            <div class="event-card">
+                <img src="images/event-workshop.jpg" alt="Cyber Security Workshop" class="event-image">
+                <div class="event-date">OCT 15</div>
+                <h3>Cyber Security Workshop</h3>
+                <p>Introduction to Penetration Testing</p>
+                <a href="#" class="register-btn">Register Now</a>
+            </div>
+            <div class="event-card">
+                <img src="images/event-ctf.jpg" alt="CTF Competition" class="event-image">
+                <div class="event-date">NOV 01</div>
+                <h3>CTF Competition</h3>
+                <p>Test your skills in our monthly CTF</p>
+                <a href="#" class="register-btn">Register Now</a>
+            </div>
+            <div class="event-card">
+                <img src="images/event-speaker.jpg" alt="Guest Speaker Session" class="event-image">
+                <div class="event-date">DEC 05</div>
+                <h3>Guest Speaker Session</h3>
+                <p>Industry expert talk on Advanced Persistent Threats (APTs)</p>
+                <a href="#" class="register-btn">Register Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="founder" class="team"> <!-- Changed id, can keep class="team" for general section styling -->
+        <h2>Meet Our Founder</h2>
+        <div class="founder-content-wrapper">
+            <div class="team-card founder-layout"> <!-- Added founder-layout class for specific styling -->
+                <div class="founder-image-column">
+                    <img src="images/john-doe.jpg" alt="Photo of John Doe, Founder & Lead Security Expert" class="team-member-photo founder">
+                </div>
+                <div class="founder-details-column">
+                    <h3>John Doe</h3>
+                    <p>Founder & Lead Security Expert</p>
+                    <p class="founder-bio">
+                        John Doe is the visionary behind CipherTekies, driven by a passion for cybersecurity and a commitment to fostering a community of learners and experts. With over a decade in the field, John aims to empower individuals to navigate the digital world securely.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <p>Have questions or want to get involved? Reach out to us!</p>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> info@ciphertekies.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 CipherTekies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
